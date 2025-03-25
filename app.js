@@ -4,7 +4,7 @@ const cors=express('cors');
 
 const app=express();
 
-app.use(cros());
+app.use(cors());
 app.use(express.json())
 const indexRouter=require('./Router/index')
 app.use('/',indexRouter)

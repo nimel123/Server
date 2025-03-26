@@ -5,7 +5,7 @@ const router=express.Router()
 
 
 
-router.get('/getdata',slist.getdata)
+router.get('/getdata',slist.getdatawithouttoken)
 router.post('/insertdata',slist.postdata)
 router.delete('/removedata/:id',slist.deletedata)
 router.put('/update/:id',slist.updateData)

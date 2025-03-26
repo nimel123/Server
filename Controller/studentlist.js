@@ -6,6 +6,29 @@ let jwtSecretKey = "abchg@123";
 
 
 
+const getdatawithouttoken = async (req, res) => {
+    try {
+     
+            const db = await dbnew.main();
+            const clct = db.collection('users');
+            const findResult = await clct.find({}).toArray();
+            res.send({
+                status: 200,
+                message: findResult
+            });
+         }
+    
+
+    
+    catch (err) {
+        res.send({
+            message: "somehthing went wrong" + err
+
+        })
+    }
+}
+
+
 
 //REGISTER API
 const postdata = async (req, res) => {

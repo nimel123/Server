@@ -196,4 +196,4 @@ const updateData = async (req, res) => {
     }
 }
 
-module.exports = { getdata, postdata, deletedata, updateData, find }
+module.exports = { getdata, postdata, deletedata, updateData, find ,getdatawithouttoken }
